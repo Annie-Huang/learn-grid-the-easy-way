@@ -142,10 +142,6 @@ h3 {
   border: 2px solid #a775f1;
 }
 
-.grid-col-span-2 {
-  grid-column: span 2;
-}
-
 /* components */
 .testimonial-grid {
   display: grid;
@@ -157,6 +153,10 @@ h3 {
 }
 
 @media (min-width: 50em) {
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+
   .testimonial-grid {
     grid-template-columns: repeat(4, 1fr);
     /* a lot of the time, you can live without setting grid-template-row. Keep it that way. */

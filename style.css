@@ -147,6 +147,10 @@ h3 {
 .testimonial-grid {
   display: grid;
   gap: 1.5rem;
+
+  /* this is ensure all columns are with the same size */
+  grid-auto-columns: 1fr;
+
   grid-template-areas:
     'one'
     'two'

@@ -144,6 +144,11 @@ h3 {
 
 /* components */
 .testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  /* a lot of the time, you can live without setting grid-template-row. Keep it that way. */
+
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;

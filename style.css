@@ -150,12 +150,30 @@ h3 {
 .testimonial-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
-  /* a lot of the time, you can live without setting grid-template-row. Keep it that way. */
 
   padding-block: 2rem;
   width: min(95%, 70rem);
   margin-inline: auto;
+}
+
+@media (min-width: 50em) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+    /* a lot of the time, you can live without setting grid-template-row. Keep it that way. */
+  }
+
+  /* This trick part of this page is that the last child looks like it's the 3th card in desktop view */
+  .testimonial:last-child {
+    grid-column-start: 4;
+    /*grid-row-start: 1;*/
+
+    /* both below have the same effect */
+    /*grid-row-end: 3;*/
+    /*grid-row-end: span 2;*/
+
+    /*grid-row: 1 / 3;*/
+    grid-row: 1 / span 2;
+  }
 }
 
 .testimonial {
@@ -163,19 +181,6 @@ h3 {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
-}
-
-/* This trick part of this page is that the last child looks like it's the 3th card in desktop view */
-.testimonial:last-child {
-  grid-column: 4;
-  /*grid-row-start: 1;*/
-
-  /* both below have the same effect */
-  /*grid-row-end: 3;*/
-  /*grid-row-end: span 2;*/
-
-  /*grid-row: 1 / 3;*/
-  grid-row: 1 / span 2;
 }
 
 .testimonial.quote {

@@ -1,0 +1,6 @@
+Learn CSS Grid the easy way (https://www.youtube.com/watch?v=rg7Fvvl3taU&t=39s)
+
+https://github.com/kevin-powell/learn-grid-the-easy-way
+https://github.com/Annie-Huang/learn-grid-the-easy-way
+
+===================================================================

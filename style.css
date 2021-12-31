@@ -175,6 +175,16 @@ h3 {
   grid-area: five;
 }
 
+@media screen and (min-width: 33em) {
+  .testimonial-grid {
+    grid-template-areas:
+      'one one'
+      'two three'
+      'five five'
+      'four four';
+  }
+}
+
 @media (min-width: 50em) {
   .testimonial-grid {
     grid-template-areas:
